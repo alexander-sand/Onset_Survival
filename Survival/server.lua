@@ -1,3 +1,7 @@
-function OnPlayerJoin(player)
+AddEvent("OnPlayerJoin", function(player)
     SetPlayerPropertyValue(player, "testValue", player + 1, true)
-end
+    AddPlayerChat(player, "P: "..GetPlayerPropertyValue(player, "testValue"))
+    print("testValue")
+end)
+
+print("Survival package loaded!")
