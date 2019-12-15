@@ -4,5 +4,5 @@
     Report value in chat
 ]]
 AddEvent("OnPlayerStreamIn", function(player)
-    AddPlayerChat("P: "..GetPlayerPropertyValue(player, "testValue"))
+    AddPlayerChat(player, "P: "..GetPlayerPropertyValue(player, "testValue"))
 end)
